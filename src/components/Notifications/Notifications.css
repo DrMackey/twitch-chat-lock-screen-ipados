@@ -1,0 +1,115 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  flex-grow: 1;
+  padding-top: 2.8%;
+}
+.messages {
+  position: relative;
+  width: 100%;
+  max-height: 25.9vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6vw;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.message__container {
+  display: flex;
+  align-items: center;
+  border-radius: 2vw;
+  padding: 1.2vw;
+  width: 100%;
+  max-width: 48.408%;
+  min-height: 5.6vw;
+  background: rgba(37, 37, 37, 0.7);
+  gap: .8vw;
+  backdrop-filter: blur(150px);
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.message__container_backdrop {
+  width: 100%;
+  position: absolute;
+  bottom: .7vw;
+  transform: scale(.96);
+  background: rgba(37, 37, 37, 0.6);
+  z-index: 2;
+}
+
+.message__container_back {
+  transform: scale(.924);
+  bottom: 0;
+  background: rgba(37, 37, 37, 0.5);
+  z-index: 1;
+}
+
+.message__image-container {
+  width: 3.15vw;
+  min-width: 3.15vw;
+  height: 3.15vw;
+  border-radius: .7vw;
+  background-color: rgba(37, 37, 37);
+  overflow: hidden;
+}
+
+.message__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message__info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.message__title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message__user {
+  color: white;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.message__time {
+  font-size: 1.1vw;
+  font-weight: 400;
+  padding-right: .65vw;
+  line-height: 1.5;
+  color: rgba(235, 235, 245, .65);
+}
+
+.message__content {
+  color: white;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  letter-spacing: .01vw;
+  max-width: 41.8vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notifications__status {
+  opacity: 0;
+  color: white;
+  font-size: 1.25vw;
+  line-height: 1.3;
+  font-weight: 500;
+}
