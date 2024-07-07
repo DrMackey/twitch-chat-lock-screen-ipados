@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/twitch-chat-lock-screen-ipados/static/css/main.2b32c35b.css",
-    "main.js": "/twitch-chat-lock-screen-ipados/static/js/main.4a6c79ec.js",
+    "main.js": "/twitch-chat-lock-screen-ipados/static/js/main.c66854c0.js",
     "static/media/OverClearX4.png": "/twitch-chat-lock-screen-ipados/static/media/OverClearX4.b409ec4981cd20feaa7d.png",
     "static/media/Battery.svg": "/twitch-chat-lock-screen-ipados/static/media/Battery.5f742bc374f7be3fd12b8993b92d977e.svg",
     "static/media/Cellular.svg": "/twitch-chat-lock-screen-ipados/static/media/Cellular.511bfbbfcd91295256a3bed42316ab1b.svg",
     "index.html": "/twitch-chat-lock-screen-ipados/index.html",
     "main.2b32c35b.css.map": "/twitch-chat-lock-screen-ipados/static/css/main.2b32c35b.css.map",
-    "main.4a6c79ec.js.map": "/twitch-chat-lock-screen-ipados/static/js/main.4a6c79ec.js.map"
+    "main.c66854c0.js.map": "/twitch-chat-lock-screen-ipados/static/js/main.c66854c0.js.map"
   },
   "entrypoints": [
     "static/css/main.2b32c35b.css",
-    "static/js/main.4a6c79ec.js"
+    "static/js/main.c66854c0.js"
   ]
 }
