@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ComfyJS from "comfy.js";
-import { useLocation } from "react-router-dom";
+import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import StatusBar from "../StatusBar/StatusBar.js";
 import MainClock from "../MainClock/MainClock.js";
 import Notifications from "../Notifications/Notifications.js";
 import HomeIndicator from "../HomeIndicator/HomeIndicator.js";
+import VideoWallpaper from "../VideoWallpaper/VideoWallpaper.js";
 import "./App.css";
 
 const initChannel = (channel) => {
@@ -33,11 +34,11 @@ function App() {
   useEffect(() => {
     const channel = location.pathname.split("/");
 
-    if (channel[1] === undefined) {
+    if (channel[2] === undefined) {
       return;
     }
 
-    initChannel(channel[1]);
+    initChannel(channel[2]);
   }, [location]);
 
   const date = `${day}, ${today.toLocaleDateString(locale, {
