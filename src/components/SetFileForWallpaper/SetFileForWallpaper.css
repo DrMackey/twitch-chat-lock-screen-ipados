@@ -1,0 +1,9 @@
+.set-file {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.set-file__input {
+  opacity: 0;
+}

@@ -1,0 +1,23 @@
+.video-wallpaper {
+  display: flex;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../../images/OverClearX4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-video {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
