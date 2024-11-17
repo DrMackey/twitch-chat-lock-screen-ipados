@@ -23,6 +23,7 @@
 }
 
 .status-bar__icons {
+  position: relative;
   display: flex;
   align-items: center;
   padding-right: 1.25vw;

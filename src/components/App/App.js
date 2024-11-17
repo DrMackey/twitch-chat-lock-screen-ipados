@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ComfyJS from "comfy.js";
 import { useLocation } from "react-router-dom";
 import StatusBar from "../StatusBar/StatusBar.js";
@@ -12,7 +12,8 @@ const initChannel = (channel) => {
 };
 
 function App() {
-  const [today, setDate] = React.useState(new Date());
+  const [today, setDate] = useState(new Date());
+  const [fileDataURL, setFileDataURL] = useState(null);
   const locale = "en";
   let location = useLocation();
 
@@ -54,12 +55,26 @@ function App() {
   });
 
   return (
-    <main className="main">
-      <StatusBar date={shortDate} time={time} />
-      <MainClock date={date} time={time} />
-      <Notifications />
-      <HomeIndicator />
-    </main>
+    <Routes>
+      <Route
+        path="/:mainUrl/*"
+        element={
+          <>
+            <main className="main">
+              <VideoWallpaper sourseContent={fileDataURL} />
+              <StatusBar
+                date={shortDate}
+                time={time}
+                setFileDataURL={setFileDataURL}
+              />
+              <MainClock date={date} time={time} />
+              <Notifications />
+              <HomeIndicator />
+            </main>
+          </>
+        }
+      />
+    </Routes>
   );
 }
 
