@@ -20,13 +20,16 @@ Chat for streamers from the streamer. Set yourself a screensaver, twitch chat in
 - support for subscription notifications
 - support for follow notifications
 - light theme
-- change wallpaper
+- ~~change wallpaper~~
 - widgets in iOS style
 - YouTube chat support
 - music player
 - iOS live activities
 
 ---
+
+## Change wallpaper
+To change the wallpaper, click on the upper right corner of the window. Currently supported formats: jpeg, mp4
 
 ### How to install and run the project:
 
